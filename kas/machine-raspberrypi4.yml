@@ -14,10 +14,6 @@ repos:
     url : "https://github.com/sbabic/meta-swupdate.git"
     branch : master
 
-  meta-swupdate-boards:
-    url : "https://github.com/sbabic/meta-swupdate-boards.git"
-    branch : master
-
 local_conf_header:
   raspberry: |
     RPI_USE_U_BOOT = "1"
@@ -41,7 +37,3 @@ local_conf_header:
     DISTRO_FEATURES_BACKFILL_CONSIDERED += "sysvinit"
     VIRTUAL-RUNTIME_init_manager = "systemd"
     VIRTUAL-RUNTIME_initscripts = "systemd-compat-units"
-
-  swu-specific: |
-    IMAGE_FSTYPES += " ext4 ext4.gz ext4.zst wic.bz2 wic.bmap"
-    WKS_FILES_raspberrypi4 = "ts-raspberrypi.wks"

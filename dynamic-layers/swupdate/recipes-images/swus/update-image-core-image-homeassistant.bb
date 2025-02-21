@@ -13,8 +13,3 @@ HAIMAGE="core-image-homeassistant"
 
 # images to build before building swupdate image
 IMAGE_DEPENDS = "${HAIMAGE}"
-
-# images and files that will be included in the .swu image
-SWUPDATE_IMAGES = "${HAIMAGE}"
-
-SWUPDATE_IMAGES_FSTYPES[core-image-homeassistant] = ".ext4.gz"
